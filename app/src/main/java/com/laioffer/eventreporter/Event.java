@@ -17,6 +17,9 @@ public class Event {
     private long time;
     private String username;
     private String imgUri;
+    private int CommentNumber;
+    private double latitude;
+    private double longitude;
 
     public void setTitle(String title) {
         this.title = title;
@@ -76,6 +79,14 @@ public class Event {
         this.imgUri = imgUri;
     }
 
+    public int getCommentNumber() {
+        return CommentNumber;
+    }
+
+    public void setCommentNumber(int commentNumber) {
+        CommentNumber = commentNumber;
+    }
+
     public Event() {}
 
     /**
@@ -86,5 +97,19 @@ public class Event {
         this.address = address;
         this.description = description;
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+    public double getLongitude() {
+        return longitude;
+    }
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
 }
 
